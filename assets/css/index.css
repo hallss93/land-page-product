@@ -40,9 +40,6 @@ body {
   margin-top: 100px;
   display: flex;
   width: 75%;
-  height: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 
 .container-yellow {
@@ -56,15 +53,18 @@ body {
 }
 
 .container-yellow.expand {
-  width: 25%;
+  width: 15%;
 }
-
+.container .row {
+  display: contents;
+  height: 100%;
+  width: 100%;
+}
 .container .half {
   width: 50%;
-  height: 100%;
 }
 
-.container .half img.notebook-yellow {
+.container .row .half img.notebook-yellow {
   position: absolute;
   width: 450px;
   left: -41%;
@@ -73,10 +73,26 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.container .half img.notebook-yellow.show {
+img.notebook-blue {
+  position: absolute;
+  top: 185px;
+  right: 0px;
+  width: 220px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  transform: rotate(0deg);
+}
+
+.container .row .half img.notebook-yellow.show {
   transform: rotate(16deg);
   opacity: 1;
   left: 10%;
+}
+img.notebook-blue.show {
+  opacity: 1;
+  right: 180px;
+  transform: rotate(-8deg);
 }
 
 .info {
