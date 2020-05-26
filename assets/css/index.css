@@ -5,12 +5,8 @@
 body {
   padding: 0;
   margin: 0;
-  background: rgb(180, 192, 234);
-  background: linear-gradient(
-    0deg,
-    rgba(180, 192, 234, 1) 0%,
-    rgba(157, 174, 218, 1) 50%
-  );
+  background: #8ec5fc;
+  transition: all 1s;
 }
 
 .navbar {
@@ -44,6 +40,9 @@ body {
 
 .container-yellow {
   background: #fbb03b;
+  background-color: #fbb03b;
+  background-image: linear-gradient(90deg, #fee140 100%, #8ec5fc 91%);
+
   position: absolute;
   right: 0;
   top: 0;
